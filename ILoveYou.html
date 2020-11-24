@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="zh">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      html {
+    height: 100%;
+}
+body {
+    background: #03A9F4;
+    position: relative;
+    height: 100%;
+}
+#h {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+#heart {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    fill: black;
+    -webkit-animation: pump 3s ease-out, rot 4s ease-in;
+    animation: pump 3s ease-out, rot 4s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes rot {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(1800deg);
+        transform: rotateY(1800deg);
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    70% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    80% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    90% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(50);
+        transform: scale(50);
+    }
+}
+@keyframes rot {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(1800deg);
+        transform: rotateY(1800deg);
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    70% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    80% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    90% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(50);
+        transform: scale(50);
+    }
+}
+@-webkit-keyframes pump {
+    0% {
+        fill: black;
+    }
+    1% {
+        fill: black;
+    }
+    2% {
+        fill: black;
+    }
+    3% {
+        fill: black;
+    }
+    4% {
+        fill: black;
+    }
+    5% {
+        fill: black;
+    }
+    6% {
+        fill: black;
+    }
+    7% {
+        fill: black;
+    }
+    8% {
+        fill: black;
+    }
+    9% {
+        fill: black;
+    }
+    10% {
+        fill: black;
+    }
+    11% {
+        fill: black;
+    }
+    12% {
+        fill: black;
+    }
+    13% {
+        fill: black;
+    }
+    14% {
+        fill: black;
+    }
+    15% {
+        fill: black;
+    }
+    16% {
+        fill: black;
+    }
+    17% {
+        fill: black;
+    }
+    18% {
+        fill: black;
+    }
+    19% {
+        fill: black;
+    }
+    20% {
+        fill: black;
+    }
+    21% {
+        fill: black;
+    }
+    22% {
+        fill: black;
+    }
+    23% {
+        fill: black;
+    }
+    24% {
+        fill: black;
+    }
+    25% {
+        fill: black;
+    }
+    26% {
+        fill: black;
+    }
+    27% {
+        fill: black;
+    }
+    28% {
+        fill: black;
+    }
+    29% {
+        fill: black;
+    }
+    30% {
+        fill: black;
+    }
+    31% {
+        fill: black;
+    }
+    32% {
+        fill: black;
+    }
+    33% {
+        fill: black;
+    }
+    34% {
+        fill: black;
+    }
+    35% {
+        fill: black;
+    }
+    36% {
+        fill: black;
+    }
+    37% {
+        fill: black;
+    }
+    38% {
+        fill: black;
+    }
+    39% {
+        fill: black;
+    }
+    40% {
+        fill: black;
+    }
+    41% {
+        fill: black;
+    }
+    42% {
+        fill: #020000;
+    }
+    43% {
+        fill: #070100;
+    }
+    44% {
+        fill: #0c0101;
+    }
+    45% {
+        fill: #110201;
+    }
+    46% {
+        fill: #150301;
+    }
+    47% {
+        fill: #1a0301;
+    }
+    48% {
+        fill: #1f0402;
+    }
+    49% {
+        fill: #240402;
+    }
+    50% {
+        fill: #290502;
+    }
+    51% {
+        fill: #2e0502;
+    }
+    52% {
+        fill: #320603;
+    }
+    53% {
+        fill: #370703;
+    }
+    54% {
+        fill: #3c0703;
+    }
+    55% {
+        fill: #410804;
+    }
+    56% {
+        fill: #460804;
+    }
+    57% {
+        fill: #4b0904;
+    }
+    58% {
+        fill: #4f0904;
+    }
+    59% {
+        fill: #540a05;
+    }
+    60% {
+        fill: #590b05;
+    }
+    61% {
+        fill: #5e0b05;
+    }
+    62% {
+        fill: #630c05;
+    }
+    63% {
+        fill: #680c06;
+    }
+    64% {
+        fill: #6c0d06;
+    }
+    65% {
+        fill: #710e06;
+    }
+    66% {
+        fill: #760e06;
+    }
+    67% {
+        fill: #7b0f07;
+    }
+    68% {
+        fill: #800f07;
+    }
+    69% {
+        fill: #851007;
+    }
+    70% {
+        fill: #891008;
+    }
+    71% {
+        fill: #8e1108;
+    }
+    72% {
+        fill: #931208;
+    }
+    73% {
+        fill: #981208;
+    }
+    74% {
+        fill: #9d1309;
+    }
+    75% {
+        fill: #a21309;
+    }
+    76% {
+        fill: #a61409;
+    }
+    77% {
+        fill: #ab1409;
+    }
+    78% {
+        fill: #b0150a;
+    }
+    79% {
+        fill: #b5160a;
+    }
+    80% {
+        fill: #ba160a;
+    }
+    81% {
+        fill: #bf170a;
+    }
+    82% {
+        fill: #c4170b;
+    }
+    83% {
+        fill: #c8180b;
+    }
+    84% {
+        fill: #cd180b;
+    }
+    85% {
+        fill: #d2190b;
+    }
+    86% {
+        fill: #d71a0c;
+    }
+    87% {
+        fill: #dc1a0c;
+    }
+    88% {
+        fill: #e11b0c;
+    }
+    89% {
+        fill: #e51b0d;
+    }
+    90% {
+        fill: #ea1c0d;
+    }
+    91% {
+        fill: #ef1d0d;
+    }
+    92% {
+        fill: #f21f0f;
+    }
+    93% {
+        fill: #f22314;
+    }
+    94% {
+        fill: #f22819;
+    }
+    95% {
+        fill: #f32c1e;
+    }
+    96% {
+        fill: #f33123;
+    }
+    97% {
+        fill: #f33527;
+    }
+    98% {
+        fill: #f33a2c;
+    }
+    99% {
+        fill: #f43e31;
+    }
+    100% {
+        fill: #f44336;
+    }
+}
+@keyframes pump {
+    0% {
+        fill: black;
+    }
+    1% {
+        fill: black;
+    }
+    2% {
+        fill: black;
+    }
+    3% {
+        fill: black;
+    }
+    4% {
+        fill: black;
+    }
+    5% {
+        fill: black;
+    }
+    6% {
+        fill: black;
+    }
+    7% {
+        fill: black;
+    }
+    8% {
+        fill: black;
+    }
+    9% {
+        fill: black;
+    }
+    10% {
+        fill: black;
+    }
+    11% {
+        fill: black;
+    }
+    12% {
+        fill: black;
+    }
+    13% {
+        fill: black;
+    }
+    14% {
+        fill: black;
+    }
+    15% {
+        fill: black;
+    }
+    16% {
+        fill: black;
+    }
+    17% {
+        fill: black;
+    }
+    18% {
+        fill: black;
+    }
+    19% {
+        fill: black;
+    }
+    20% {
+        fill: black;
+    }
+    21% {
+        fill: black;
+    }
+    22% {
+        fill: black;
+    }
+    23% {
+        fill: black;
+    }
+    24% {
+        fill: black;
+    }
+    25% {
+        fill: black;
+    }
+    26% {
+        fill: black;
+    }
+    27% {
+        fill: black;
+    }
+    28% {
+        fill: black;
+    }
+    29% {
+        fill: black;
+    }
+    30% {
+        fill: black;
+    }
+    31% {
+        fill: black;
+    }
+    32% {
+        fill: black;
+    }
+    33% {
+        fill: black;
+    }
+    34% {
+        fill: black;
+    }
+    35% {
+        fill: black;
+    }
+    36% {
+        fill: black;
+    }
+    37% {
+        fill: black;
+    }
+    38% {
+        fill: black;
+    }
+    39% {
+        fill: black;
+    }
+    40% {
+        fill: black;
+    }
+    41% {
+        fill: black;
+    }
+    42% {
+        fill: #020000;
+    }
+    43% {
+        fill: #070100;
+    }
+    44% {
+        fill: #0c0101;
+    }
+    45% {
+        fill: #110201;
+    }
+    46% {
+        fill: #150301;
+    }
+    47% {
+        fill: #1a0301;
+    }
+    48% {
+        fill: #1f0402;
+    }
+    49% {
+        fill: #240402;
+    }
+    50% {
+        fill: #290502;
+    }
+    51% {
+        fill: #2e0502;
+    }
+    52% {
+        fill: #320603;
+    }
+    53% {
+        fill: #370703;
+    }
+    54% {
+        fill: #3c0703;
+    }
+    55% {
+        fill: #410804;
+    }
+    56% {
+        fill: #460804;
+    }
+    57% {
+        fill: #4b0904;
+    }
+    58% {
+        fill: #4f0904;
+    }
+    59% {
+        fill: #540a05;
+    }
+    60% {
+        fill: #590b05;
+    }
+    61% {
+        fill: #5e0b05;
+    }
+    62% {
+        fill: #630c05;
+    }
+    63% {
+        fill: #680c06;
+    }
+    64% {
+        fill: #6c0d06;
+    }
+    65% {
+        fill: #710e06;
+    }
+    66% {
+        fill: #760e06;
+    }
+    67% {
+        fill: #7b0f07;
+    }
+    68% {
+        fill: #800f07;
+    }
+    69% {
+        fill: #851007;
+    }
+    70% {
+        fill: #891008;
+    }
+    71% {
+        fill: #8e1108;
+    }
+    72% {
+        fill: #931208;
+    }
+    73% {
+        fill: #981208;
+    }
+    74% {
+        fill: #9d1309;
+    }
+    75% {
+        fill: #a21309;
+    }
+    76% {
+        fill: #a61409;
+    }
+    77% {
+        fill: #ab1409;
+    }
+    78% {
+        fill: #b0150a;
+    }
+    79% {
+        fill: #b5160a;
+    }
+    80% {
+        fill: #ba160a;
+    }
+    81% {
+        fill: #bf170a;
+    }
+    82% {
+        fill: #c4170b;
+    }
+    83% {
+        fill: #c8180b;
+    }
+    84% {
+        fill: #cd180b;
+    }
+    85% {
+        fill: #d2190b;
+    }
+    86% {
+        fill: #d71a0c;
+    }
+    87% {
+        fill: #dc1a0c;
+    }
+    88% {
+        fill: #e11b0c;
+    }
+    89% {
+        fill: #e51b0d;
+    }
+    90% {
+        fill: #ea1c0d;
+    }
+    91% {
+        fill: #ef1d0d;
+    }
+    92% {
+        fill: #f21f0f;
+    }
+    93% {
+        fill: #f22314;
+    }
+    94% {
+        fill: #f22819;
+    }
+    95% {
+        fill: #f32c1e;
+    }
+    96% {
+        fill: #f33123;
+    }
+    97% {
+        fill: #f33527;
+    }
+    98% {
+        fill: #f33a2c;
+    }
+    99% {
+        fill: #f43e31;
+    }
+    100% {
+        fill: #f44336;
+    }
+}
+      .typed-cursor{
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+    }
+    .typed-fade-out{
+      opacity: 0;
+      transition: opacity .25s;
+      -webkit-animation: 0;
+      animation: 0;
+    }
+    @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    *{
+      font-size: xx-large;
+    }
+    
+    </style>
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    
+    <!-- 引入 jQuery 库 -->
+    <script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/typed.js/2.0.9/typed.js"></script>
+    <title>I Love You</title>
+    </head>
+<body style="background-color: #ffaaaa;">
+  
+    <div data-role="page" id="page1" data-dialog="true">
+    
+      <div data-role="header">
+        
+      </div>
+    
+      <div data-role="main" class="ui-content">
+        <h1>你好呀，我的公主</h1>
+        <p>如果不曾遇见过你,我本可以忍受孤独.</p>
+        <p>我一直默默地等待着你</p>
+        <p>下面的话是我酝酿了很久才想清楚要对你说的</p>
+        <p>你准备好了吗?</p>
+        <a href="#page2" onclick="loadPage2()" data-transition="slide">准备好了</a>
+      </div>
+    
+      <div data-role="footer">
+        
+      </div>
+    
+    </div>
+    <div data-role="page" id="page2" >
+    
+      <div data-role="header">
+        
+      </div>
+    
+      <div data-role="main" class="ui-content" >
+        
+        <div id="h">
+          <?xml version="1.0" encoding="iso-8859-1" ?>
+          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "https://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg version="1.1" id="heart" class="rot" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+              <g>
+                  <g>
+                      <path d="M14.708,15.847C14.252,14.864,14,13.742,14,12.5s0.252-2.489,0.708-3.659c0.455-1.171,1.114-2.266,1.929-3.205 c0.814-0.938,1.784-1.723,2.86-2.271C20.574,2.814,21.758,2.5,23,2.5s2.426,0.252,3.503,0.707c1.077,0.456,2.046,1.115,2.86,1.929 c0.813,0.814,1.474,1.784,1.929,2.861C31.749,9.073,32,10.258,32,11.5s-0.252,2.427-0.708,3.503 c-0.455,1.077-1.114,2.047-1.929,2.861C28.55,18.678,17.077,29.044,16,29.5l0,0l0,0C14.923,29.044,3.45,18.678,2.636,17.864 c-0.814-0.814-1.473-1.784-1.929-2.861C0.252,13.927,0,12.742,0,11.5s0.252-2.427,0.707-3.503C1.163,6.92,1.821,5.95,2.636,5.136 C3.45,4.322,4.42,3.663,5.497,3.207C6.573,2.752,7.757,2.5,9,2.5s2.427,0.314,3.503,0.863c1.077,0.55,2.046,1.334,2.861,2.272 c0.814,0.939,1.473,2.034,1.929,3.205C17.748,10.011,18,11.258,18,12.5s-0.252,2.364-0.707,3.347 c-0.456,0.983-1.113,1.828-1.929,2.518"
+                      /> </g>
+              </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+              <g> </g>
+          </svg>
+      </div>
+      </div>
+    
+      <div data-role="footer">
+        
+      </div>
+    </div>
+
+    <div data-role="page" id="page3">
+    
+      <div data-role="header">
+        
+      </div>
+    
+      <div data-role="main" class="ui-content">
+        <span class="element1">
+          
+        </span>
+        
+      </div>
+    
+      
+    
+    </div>
+    
+    
+      
+    
+    </div>
+    
+    <div data-role="page" id="page4">
+    
+      <div data-role="header">
+        
+      </div>
+    
+      <div data-role="main" class="ui-content">
+        <span class="element2">
+          
+        </span>
+        
+      </div>
+    
+      
+    
+    </div>
+    <div data-role="page" id="page5" data-dialog="true">
+    
+      
+    
+      
+    
+          <div data-role="main" class="ui-content">
+            <h2>你愿意做我的女朋友吗?</h2>
+            <a  class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left"  onclick="loadPage4()" data-transition="slide">愿意</a>
+          </div>
+    
+          
+        
+        
+    </div>
+    
+    
+</body>
+<script>
+  const sentence = `
+  姑娘：
+
+我本来以为爱情，一定非要滚滚红尘、奔腾策马，是对酒当歌、雪月风花，许一些天长地久，说一句爱你万年，要为她不惜一切，生与死之间虐恋千百次，要刑场救爱、大喊一声刀下留人，要武功盖世、火遁木遁无所不能，英雄美人，金刀绸缎，是一生一次的浪掷，这样潇洒。
+
+
+
+后来大了些，我以为爱情，是我命里一定要经历的一道劫。这劫数是在一个明明朗的天，我遇着一个紫霞仙子一样的姑娘，她一颦一笑一眨眼，我的星球大气烟消云散，头顶漂浮一万颗明亮亮的星，而我的肾上腺素铺开流成一条银河，我知此生于此，花光所有运气，这样浪漫。
+
+再后来，我以为爱情，是岁月长久的相伴。不像绚烂在天际的烟火，好看一时，灰烬飘落无声。要坚守，要一些一生的勇气。浪漫终有一天死去，生活总归于平淡，当我终有一天不再是夕阳武士、不再当齐天大圣，什么金甲圣衣、七彩祥云，都不如老老实实地剥个橘子，这样真实。
+
+直到我遇见了你。
+
+不，直到我爱上了你。
+
+我才知道，什么命运之门、爱情真理，什么江南烟雨、撑伞相遇，什么英雄救美、平淡一世，都要站一边去。
+
+姑娘，爱情哪里讲什么道理。
+
+我只感觉，这世界雪融晴朗、春风像海浪一般荡漾，没有什么角落不是灌满光明，没有什么地方不是可爱之处，只因为生生多了个你。
+
+只因为生生多了个你，我便感觉哪里都可去得。不要良辰美景，不用山川无尽，不需我想起以前那些想过的，那样潇洒、那样浪漫、那样真实。
+
+这些都不要了。
+
+我曾以为我看破了些红尘杂念，悟出了点爱情真谛，我曾以为只要这些情景应了、就有情怀，我曾以为只要这样动作到了、就有动心。
+
+还是我想的太容易了。
+
+我才知道这英雄美人、潇洒浪漫的情节，这些粗茶淡饭、平淡一生的故事，都比不过你在我眼前转一圈，跟我说一句，嘿，你觉得我这么穿好看吗？
+
+我想起《西游降魔》里，陈玄奘取经路上，他看到云朵之间漂浮着段小姐的脸，如梦如幻，如痴如醉。
+
+姑娘，这世间哪有佛法能降七情六欲，而你却能度我的心。
+
+我还想起铁达尼号撞向冰山的决然，想起Jack沉入冰冷大洋里的决然，想起Rose把海洋之心丢进海水里的决然，我也想起姜戈救希尔达所经历过的枪炮鲜血、烈马皮鞭，我想起这些，却也并没有一丝退缩的意愿。
+
+我们这一生的确漫长，但现在，我有与你共度一生的梦想。我想跟你看飞雪大江、红云落日，而你的头靠在我的肩膀。我想与你一起体验这世界种种未知、爱与思念，而我的眼神始终在你身上。
+
+姑娘，现在夜已深。那街边琴声，天边星宿，都不是我想念你的理由，这纸上墨迹，灯上烛花，都不是我思念你的方式。
+
+都不是。
+
+我想起以前，觉得只要在岸边好好地等，总有一天能等到你坐的那一张船。
+可没想到过尽千帆皆不是。
+
+我也失望过，尝过爱情里最不好受的一些滋味，无非是斜晖脉脉，水悠悠，像个傻逼，二十投。
+
+但没想到转身还是见到了你。
+
+你站的地方，灯火阑不阑珊，我不知道，是不是车水马龙星如雨，我也忘却了。但我大概一生都不能忘了你。
+
+不，是一定不能。
+
+所以我想说出这些长久以来刻在我心上的情话，我怕等岁月青春过去，我便再没有这样的机会跟你坦陈心迹，我怕好不容易在青石板桥上等来的撑伞的你，一转身的时候你就坐着乌篷船往远方去了。
+
+那就太遗憾了。
+
+姑娘，我前面说了些乱七八糟的话，若你能看到这里，我也感激。
+
+王小波对李银河说过许多关于爱情和一生的话，我也很喜欢，那就给这一句给你。
+
+姑娘，爱你就像爱生命。
+  `;
+  let words = sentence.split("\n");
+  
+    function loadPage2(){
+      console.log("page2")
+      setTimeout(loadPage3,5000);
+    }
+    function loadPage3(){
+      $.mobile.changePage("#page3")
+      var typed = new Typed('.element1', {
+      strings: words, //输入内容, 支持html标签
+      typeSpeed: 20, //打字速度
+      backSpeed: 300, //回退速度
+      fadeOut: true,
+      fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 200,
+      onComplete: (self) => {
+        loadPage5()
+      }
+    });
+    }
+    function loadPage4(){
+      $.mobile.changePage("#page4");
+      var typed = new Typed('.element2', {
+      strings: ["我做过最有勇气的事情\n就是放弃了做朋友的机会\n只想让你知道我喜欢你"], 
+      typeSpeed: 100, //打字速度
+      backSpeed: 300, //回退速度
+      fadeOut: true,
+      fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 500,
+      
+    });
+    }
+    function loadPage5(){
+      $.mobile.changePage("#page5")
+    }
+    
+    
+    
+</script>
+</html>
